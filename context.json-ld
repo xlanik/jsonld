@@ -1,24 +1,104 @@
 {
-"@context": [
-{
-"@protected": true,
-"@version": 1.1,
-"id": "@id",
-"type": "@type",
-"KYCvp": {
-"@context": {
-"@propagate": true,
-"@protected": true,
-"polygon-vocab": "urn:uuid:3da052a0-dbd2-40d7-9d3e-5a8d8992b28d#",
-"xsd": "http://www.w3.org/2001/XMLSchema#",
+"$metadata": {
+"uris": {
+"jsonLdContext": "ipfs://Qmc2iQRYAJvuShKyq9P72MThZ11SaeirHJnQw7h9ozCATN"
+},
+"version": "1.0",
+"type": "PolygonID"
+},
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+"description": "This is vodisky preukaz.",
+"title": "VodicskyPreukaz",
+"properties": {
+"credentialSubject": {
+"description": "Stores the data of the credential",
+"title": "Credential subject",
+"properties": {
+"id": {
+"description": "Stores the DID of the subject that owns the credential",
+"title": "Credential subject ID",
+"format": "uri",
+"type": "string"
+},
 "valid": {
-"@id": "polygon-vocab:valid",
-"@type": "xsd:integer"
+"description": "Is VP valid?",
+"title": "Validity of document",
+"type": "boolean"
 }
 },
-"@id": "urn:uuid:6faa424e-ffac-44fb-82e3-8fa2ac3ea303"
-
-}
-}
+"required": [
+"valid"
+],
+"type": "object"
+},
+"@context": {
+"type": [
+"string",
+"array",
+"object"
 ]
+},
+"expirationDate": {
+"format": "date-time",
+"type": "string"
+},
+"id": {
+"type": "string"
+},
+"issuanceDate": {
+"format": "date-time",
+"type": "string"
+},
+"issuer": {
+"type": [
+"string",
+"object"
+],
+"format": "uri",
+"properties": {
+"id": {
+"format": "uri",
+"type": "string"
+}
+},
+"required": [
+"id"
+]
+},
+"type": {
+"type": [
+"string",
+"array"
+],
+"items": {
+"type": "string"
+}
+},
+"credentialSchema": {
+"properties": {
+"id": {
+"format": "uri",
+"type": "string"
+},
+"type": {
+"type": "string"
+}
+},
+"required": [
+"id",
+"type"
+],
+"type": "object"
+}
+},
+"required": [
+"credentialSubject",
+"@context",
+"id",
+"issuanceDate",
+"issuer",
+"type",
+"credentialSchema"
+],
+"type": "object"
 }
