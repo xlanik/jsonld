@@ -2,7 +2,8 @@
     "$metadata": {
     "type": "KYCvp",
     "uris": {
-    "jsonLdContext": "ipfs://QmPz61NfFKjuAW8RCd4FCqMCgMDQaWmpiucAABp9BxZhMA"
+    "jsonLdContext": "https://raw.githubusercontent.com/xlanik/jsonld/main/context.json-ld",
+    "jsonSchema": "https://raw.githubusercontent.com/xlanik/jsonld/main/url.json"
     },
     "version": "1.1"
     },
