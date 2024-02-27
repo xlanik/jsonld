@@ -1,0 +1,67 @@
+{
+"@context": [
+{
+"@protected": true,
+"@version": 1.1,
+"id": "@id",
+"type": "@type",
+"CarReg": {
+"@context": {
+"@propagate": true,
+"@protected": true,
+"polygon-vocab": "urn:uuid:99440797-371e-4f87-b057-d9974631a7b0#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"make": {
+"@id": "polygon-vocab:make",
+"@type": "xsd:string"
+},
+"model": {
+"@id": "polygon-vocab:model",
+"@type": "xsd:string"
+},
+"year": {
+"@id": "polygon-vocab:year",
+"@type": "xsd:double"
+},
+"vin": {
+"@id": "polygon-vocab:vin",
+"@type": "xsd:string"
+},
+"engine_type": {
+"@id": "polygon-vocab:engine_type",
+"@type": "xsd:string"
+},
+"color": {
+"@id": "polygon-vocab:color",
+"@type": "xsd:string"
+},
+"licence_number": {
+"@id": "polygon-vocab:licence_number",
+"@type": "xsd:string"
+},
+"owner": {
+"@id": "polygon-vocab:owner",
+"@type": "xsd:string"
+},
+"vehicle_type": {
+"@id": "polygon-vocab:vehicle_type",
+"@type": "xsd:string"
+},
+"fuel_type": {
+"@id": "polygon-vocab:fuel_type",
+"@type": "xsd:string"
+},
+"capacity": {
+"@id": "polygon-vocab:capacity",
+"@type": "xsd:string"
+},
+"emission_class": {
+"@id": "polygon-vocab:emission_class",
+"@type": "xsd:string"
+}
+},
+"@id": "urn:uuid:484d3107-aa1b-42a3-a191-fcdf92c82ee6"
+}
+}
+]
+}
