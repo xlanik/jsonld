@@ -1,0 +1,47 @@
+{
+"@context": [
+{
+"@protected": true,
+"@version": 1.1,
+"id": "@id",
+"type": "@type",
+"drivingID": {
+"@context": {
+"@propagate": true,
+"@protected": true,
+"polygon-vocab": "urn:uuid:0bba491d-614c-4f1a-b57f-fc0a5c294959#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
+"full_name": {
+"@id": "polygon-vocab:full_name",
+"@type": "xsd:string"
+},
+"licence_number": {
+"@id": "polygon-vocab:licence_number",
+"@type": "xsd:string"
+},
+"birth_date": {
+"@id": "polygon-vocab:birth_date",
+"@type": "xsd:string"
+},
+"date_of_issue": {
+"@id": "polygon-vocab:date_of_issue",
+"@type": "xsd:string"
+},
+"address": {
+"@id": "polygon-vocab:address",
+"@type": "xsd:string"
+},
+"class": {
+"@id": "polygon-vocab:class",
+"@type": "xsd:string"
+},
+"restrictions": {
+"@id": "polygon-vocab:restrictions",
+"@type": "xsd:string"
+}
+},
+"@id": "urn:uuid:d4e8c657-6ec5-4749-8be3-26a1256d1668"
+}
+}
+]
+}
